@@ -1,0 +1,36 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "GoSetter app for mern stack learning",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "prepare": "husky install"
+  },
+  "author": "ALIA",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.8",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
